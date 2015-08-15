@@ -5,7 +5,7 @@ module.exports = (robot) ->
       .get() (err, resp, body) ->
         data = JSON.parse(body)
         if data and data['hits'] and data['hits']['total'] and data['hits']['total'] > 0
-          randomNumAlt = Math.floor(Math.random() * (data['hits']['total'] - 0))
+          randomNumAlt = Math.floor(Math.random() * (data['hits']['total']))
           if data['hits']['hits'][randomNumAlt] and data['hits']['hits'][randomNumAlt]['_source'] and data['hits']['hits'][randomNumAlt]['_source']['url']
             res.send data['hits']['hits'][randomNumAlt]['_source']['url']
           else
