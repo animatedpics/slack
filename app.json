@@ -2,7 +2,7 @@
   "name": "animatedpics-slack",
   "description": "GifGallery slack wrapper.",
   "repository": "https://github.com/animatedpics/slack",
-  "keywords": ["node", "slack", "bot, "gifgallery", "gif"],
+  "keywords": ["node", "slack", "bot", "gifgallery", "gif"],
   "env": {
     "SLACK_API_TOKEN": {
       "description": "This token is required in order to use Slack's API. You get it when you create a bot at https://my.slack.com/services/new/bot",
